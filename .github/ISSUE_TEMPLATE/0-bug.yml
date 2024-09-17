@@ -1,33 +1,33 @@
-name: "🐛 Report a bug"
-description: "Report a problem on the website."
-title: "[Bug]: "
-labels: ["bug: unconfirmed"]
+name: "🐛 Report a bug"  #名称
+description: "Report a problem on the website."  #作用描述
+title: "[Bug]: "  #标题
+labels: ["bug: unconfirmed"]  #标签
 body:
   - type: textarea
     attributes:
-      label: Summary
-      description: |
-        A clear and concise summary of what the bug is.
-      placeholder: |
+      label: Summary  #在这里写概括
+      description: |  #描述bug的情况
+        A clear and concise summary of what the bug is. 
+      placeholder: |  #描述bug的示例
         Example bug report:
         When I click the "Submit" button on "Feedback", nothing happens.
     validations:
       required: true
   - type: input
     attributes:
-      label: Page
-      description: |
+      label: Page  #在这里写页面信息
+      description: |  #说明在哪个页面遇到bug
         What page(s) did you encounter this bug on?
-      placeholder: |
+      placeholder: |  #说明页面的示例
         https://react.dev/
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Details
-      description: |
+      label: Details  #在这里写细节
+      description: |  #提供更多细节
         Please provide any additional details about the bug.
-      placeholder: |
+      placeholder: |  #提供细节的示例
         Example details:
         The "Submit" button is unresponsive. I've tried refreshing the page and using a different browser, but the issue persists.
     validations:
